@@ -8,7 +8,7 @@ public class LightController : MonoBehaviour {
 	private GameObject floor;
 
 	void Start () {
-
+		
 		lightbulb = GetComponent<Light>();
 
 		//looks for an object called "Endpoint" for the  position. If it doesn't exist, sets the position equal to 0
