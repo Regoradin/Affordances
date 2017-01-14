@@ -15,7 +15,7 @@ public class Endpoint : MonoBehaviour {
 		if (other.tag == "Player")
 		{
 			Debug.Log("YOU WIN");
-			if (SceneManager.sceneCount > SceneManager.GetActiveScene().buildIndex + 1)
+			if (SceneManager.sceneCountInBuildSettings > SceneManager.GetActiveScene().buildIndex + 1)
 			{
 				Debug.Log("Loading next level");
 				SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
